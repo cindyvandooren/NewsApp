@@ -3791,3 +3791,1398 @@ Processing by Api::FeedsController#show as JSON
   [1m[35mFeed Load (0.8ms)[0m  SELECT "feeds".* FROM "feeds" WHERE "feeds"."id" = $1 LIMIT 1  [["id", "2"]]
   [1m[36mEntry Load (4.2ms)[0m  [1mSELECT "entries".* FROM "entries" WHERE "entries"."feed_id" = $1[0m  [["feed_id", 2]]
 Completed 200 OK in 47ms (Views: 38.8ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-06 14:38:21 -0700
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 66ms (Views: 66.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-06 14:38:21 -0700
+
+
+Started GET "/assets/news_reader.js?body=1" for 127.0.0.1 at 2015-08-06 14:38:21 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-06 14:38:21 -0700
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2015-08-06 14:38:21 -0700
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2015-08-06 14:38:21 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-06 14:38:21 -0700
+
+
+Started GET "/assets/feed_index.js?body=1" for 127.0.0.1 at 2015-08-06 14:38:21 -0700
+
+
+Started GET "/assets/feed_show.js?body=1" for 127.0.0.1 at 2015-08-06 14:38:21 -0700
+
+
+Started GET "/assets/models/entry.js?body=1" for 127.0.0.1 at 2015-08-06 14:38:21 -0700
+
+
+Started GET "/assets/models/feed.js?body=1" for 127.0.0.1 at 2015-08-06 14:38:21 -0700
+
+
+Started GET "/assets/collections/entries.js?body=1" for 127.0.0.1 at 2015-08-06 14:38:21 -0700
+
+
+Started GET "/assets/collections/feeds.js?body=1" for 127.0.0.1 at 2015-08-06 14:38:21 -0700
+
+
+Started GET "/assets/views/feed_index.js?body=1" for 127.0.0.1 at 2015-08-06 14:38:21 -0700
+
+
+Started GET "/assets/routers/router.js?body=1" for 127.0.0.1 at 2015-08-06 14:38:21 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-06 14:38:21 -0700
+
+
+Started GET "/assets/views/feed_show.js?body=1" for 127.0.0.1 at 2015-08-06 14:38:21 -0700
+
+
+Started GET "/api/feeds/2" for 127.0.0.1 at 2015-08-06 14:38:21 -0700
+Processing by Api::FeedsController#show as JSON
+  Parameters: {"id"=>"2"}
+  [1m[35mFeed Load (0.5ms)[0m  SELECT "feeds".* FROM "feeds" WHERE "feeds"."id" = $1 LIMIT 1  [["id", "2"]]
+  [1m[36mSQL (2.6ms)[0m  [1mUPDATE "feeds" SET "updated_at" = '2015-08-06 21:38:21.914910' WHERE "feeds"."id" = 2[0m
+  [1m[35m (0.7ms)[0m  SELECT "entries"."guid" FROM "entries"
+  [1m[36mEntry Load (1.4ms)[0m  [1mSELECT "entries".* FROM "entries" WHERE "entries"."feed_id" = $1[0m  [["feed_id", 2]]
+Completed 200 OK in 415ms (Views: 409.2ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-06 14:40:47 -0700
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 60ms (Views: 60.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-06 14:40:47 -0700
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2015-08-06 14:40:47 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-06 14:40:47 -0700
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2015-08-06 14:40:47 -0700
+
+
+Started GET "/assets/news_reader.js?body=1" for 127.0.0.1 at 2015-08-06 14:40:47 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-06 14:40:47 -0700
+
+
+Started GET "/assets/feed_index.js?body=1" for 127.0.0.1 at 2015-08-06 14:40:47 -0700
+
+
+Started GET "/assets/feed_show.js?body=1" for 127.0.0.1 at 2015-08-06 14:40:47 -0700
+
+
+Started GET "/assets/models/entry.js?body=1" for 127.0.0.1 at 2015-08-06 14:40:47 -0700
+
+
+Started GET "/assets/models/feed.js?body=1" for 127.0.0.1 at 2015-08-06 14:40:47 -0700
+
+
+Started GET "/assets/collections/entries.js?body=1" for 127.0.0.1 at 2015-08-06 14:40:47 -0700
+
+
+Started GET "/assets/collections/feeds.js?body=1" for 127.0.0.1 at 2015-08-06 14:40:47 -0700
+
+
+Started GET "/assets/views/feed_index.js?body=1" for 127.0.0.1 at 2015-08-06 14:40:47 -0700
+
+
+Started GET "/assets/views/feed_show.js?body=1" for 127.0.0.1 at 2015-08-06 14:40:47 -0700
+
+
+Started GET "/assets/routers/router.js?body=1" for 127.0.0.1 at 2015-08-06 14:40:47 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-06 14:40:47 -0700
+
+
+Started GET "/api/feeds/2" for 127.0.0.1 at 2015-08-06 14:40:47 -0700
+Processing by Api::FeedsController#show as JSON
+  Parameters: {"id"=>"2"}
+  [1m[35mFeed Load (0.7ms)[0m  SELECT "feeds".* FROM "feeds" WHERE "feeds"."id" = $1 LIMIT 1  [["id", "2"]]
+  [1m[36mSQL (1.0ms)[0m  [1mUPDATE "feeds" SET "updated_at" = '2015-08-06 21:40:47.728607' WHERE "feeds"."id" = 2[0m
+  [1m[35m (0.7ms)[0m  SELECT "entries"."guid" FROM "entries"
+  [1m[36mEntry Load (1.5ms)[0m  [1mSELECT "entries".* FROM "entries" WHERE "entries"."feed_id" = $1[0m  [["feed_id", 2]]
+Completed 200 OK in 412ms (Views: 407.0ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-06 14:41:00 -0700
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-06 14:41:00 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-06 14:41:00 -0700
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2015-08-06 14:41:00 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-06 14:41:00 -0700
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2015-08-06 14:41:00 -0700
+
+
+Started GET "/assets/news_reader.js?body=1" for 127.0.0.1 at 2015-08-06 14:41:00 -0700
+
+
+Started GET "/assets/feed_show.js?body=1" for 127.0.0.1 at 2015-08-06 14:41:00 -0700
+
+
+Started GET "/assets/feed_index.js?body=1" for 127.0.0.1 at 2015-08-06 14:41:00 -0700
+
+
+Started GET "/assets/models/feed.js?body=1" for 127.0.0.1 at 2015-08-06 14:41:00 -0700
+
+
+Started GET "/assets/models/entry.js?body=1" for 127.0.0.1 at 2015-08-06 14:41:00 -0700
+
+
+Started GET "/assets/collections/entries.js?body=1" for 127.0.0.1 at 2015-08-06 14:41:00 -0700
+
+
+Started GET "/assets/collections/feeds.js?body=1" for 127.0.0.1 at 2015-08-06 14:41:00 -0700
+
+
+Started GET "/assets/views/feed_index.js?body=1" for 127.0.0.1 at 2015-08-06 14:41:00 -0700
+
+
+Started GET "/assets/views/feed_show.js?body=1" for 127.0.0.1 at 2015-08-06 14:41:00 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-06 14:41:00 -0700
+
+
+Started GET "/assets/routers/router.js?body=1" for 127.0.0.1 at 2015-08-06 14:41:00 -0700
+
+
+Started GET "/api/feeds/2" for 127.0.0.1 at 2015-08-06 14:41:00 -0700
+Processing by Api::FeedsController#show as JSON
+  Parameters: {"id"=>"2"}
+  [1m[35mFeed Load (0.6ms)[0m  SELECT "feeds".* FROM "feeds" WHERE "feeds"."id" = $1 LIMIT 1  [["id", "2"]]
+  [1m[36mEntry Load (2.2ms)[0m  [1mSELECT "entries".* FROM "entries" WHERE "entries"."feed_id" = $1[0m  [["feed_id", 2]]
+Completed 200 OK in 67ms (Views: 63.1ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-06 14:41:03 -0700
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-06 14:41:03 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-06 14:41:03 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-06 14:41:03 -0700
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2015-08-06 14:41:03 -0700
+
+
+Started GET "/assets/feed_index.js?body=1" for 127.0.0.1 at 2015-08-06 14:41:03 -0700
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2015-08-06 14:41:04 -0700
+
+
+Started GET "/assets/news_reader.js?body=1" for 127.0.0.1 at 2015-08-06 14:41:04 -0700
+
+
+Started GET "/assets/feed_show.js?body=1" for 127.0.0.1 at 2015-08-06 14:41:04 -0700
+
+
+Started GET "/assets/models/entry.js?body=1" for 127.0.0.1 at 2015-08-06 14:41:04 -0700
+
+
+Started GET "/assets/models/feed.js?body=1" for 127.0.0.1 at 2015-08-06 14:41:04 -0700
+
+
+Started GET "/assets/collections/entries.js?body=1" for 127.0.0.1 at 2015-08-06 14:41:04 -0700
+
+
+Started GET "/assets/collections/feeds.js?body=1" for 127.0.0.1 at 2015-08-06 14:41:04 -0700
+
+
+Started GET "/assets/views/feed_show.js?body=1" for 127.0.0.1 at 2015-08-06 14:41:04 -0700
+
+
+Started GET "/assets/routers/router.js?body=1" for 127.0.0.1 at 2015-08-06 14:41:04 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-06 14:41:04 -0700
+
+
+Started GET "/assets/views/feed_index.js?body=1" for 127.0.0.1 at 2015-08-06 14:41:04 -0700
+
+
+Started GET "/api/feeds" for 127.0.0.1 at 2015-08-06 14:41:04 -0700
+Processing by Api::FeedsController#index as JSON
+  [1m[35mFeed Load (0.5ms)[0m  SELECT "feeds".* FROM "feeds"
+  [1m[36mSQL (0.9ms)[0m  [1mUPDATE "feeds" SET "updated_at" = '2015-08-06 21:41:04.150132' WHERE "feeds"."id" = 1[0m
+  [1m[35m (0.8ms)[0m  SELECT "entries"."guid" FROM "entries"
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "entries" ("created_at", "feed_id", "guid", "json", "link", "published_at", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["created_at", Thu, 06 Aug 2015 21:41:04 UTC +00:00], ["feed_id", 1], ["guid", "http://example.com/test/1438897260"], ["json", "{\"title\":\"Lorem ipsum 2015-08-06T21:41:00+00:00\",\"link\":\"http://example.com/test/1438897260\",\"description\":\"Ipsum ea commodo occaecat commodo et nisi ullamco in ea.\",\"pubDate\":\"2015-08-06T14:41:00-07:00\",\"guid\":\"http://example.com/test/1438897260\",\"dc_creator\":\"John Smith\"}"], ["link", "http://example.com/test/1438897260"], ["published_at", Thu, 06 Aug 2015 21:41:00 UTC +00:00], ["title", "Lorem ipsum 2015-08-06T21:41:00+00:00"], ["updated_at", Thu, 06 Aug 2015 21:41:04 UTC +00:00]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "entries" ("created_at", "feed_id", "guid", "json", "link", "published_at", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["created_at", Thu, 06 Aug 2015 21:41:04 UTC +00:00], ["feed_id", 1], ["guid", "http://example.com/test/1438897250"], ["json", "{\"title\":\"Lorem ipsum 2015-08-06T21:40:50+00:00\",\"link\":\"http://example.com/test/1438897250\",\"description\":\"Ad aute id incididunt velit consectetur amet pariatur et esse magna.\",\"pubDate\":\"2015-08-06T14:40:50-07:00\",\"guid\":\"http://example.com/test/1438897250\",\"dc_creator\":\"John Smith\"}"], ["link", "http://example.com/test/1438897250"], ["published_at", Thu, 06 Aug 2015 21:40:50 UTC +00:00], ["title", "Lorem ipsum 2015-08-06T21:40:50+00:00"], ["updated_at", Thu, 06 Aug 2015 21:41:04 UTC +00:00]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "entries" ("created_at", "feed_id", "guid", "json", "link", "published_at", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["created_at", Thu, 06 Aug 2015 21:41:04 UTC +00:00], ["feed_id", 1], ["guid", "http://example.com/test/1438897240"], ["json", "{\"title\":\"Lorem ipsum 2015-08-06T21:40:40+00:00\",\"link\":\"http://example.com/test/1438897240\",\"description\":\"Elit ut velit dolor deserunt aliquip voluptate duis enim nostrud officia culpa tempor.\",\"pubDate\":\"2015-08-06T14:40:40-07:00\",\"guid\":\"http://example.com/test/1438897240\",\"dc_creator\":\"John Smith\"}"], ["link", "http://example.com/test/1438897240"], ["published_at", Thu, 06 Aug 2015 21:40:40 UTC +00:00], ["title", "Lorem ipsum 2015-08-06T21:40:40+00:00"], ["updated_at", Thu, 06 Aug 2015 21:41:04 UTC +00:00]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "entries" ("created_at", "feed_id", "guid", "json", "link", "published_at", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["created_at", Thu, 06 Aug 2015 21:41:04 UTC +00:00], ["feed_id", 1], ["guid", "http://example.com/test/1438897230"], ["json", "{\"title\":\"Lorem ipsum 2015-08-06T21:40:30+00:00\",\"link\":\"http://example.com/test/1438897230\",\"description\":\"Fugiat qui quis ullamco magna deserunt qui dolor aliquip laborum.\",\"pubDate\":\"2015-08-06T14:40:30-07:00\",\"guid\":\"http://example.com/test/1438897230\",\"dc_creator\":\"John Smith\"}"], ["link", "http://example.com/test/1438897230"], ["published_at", Thu, 06 Aug 2015 21:40:30 UTC +00:00], ["title", "Lorem ipsum 2015-08-06T21:40:30+00:00"], ["updated_at", Thu, 06 Aug 2015 21:41:04 UTC +00:00]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "entries" ("created_at", "feed_id", "guid", "json", "link", "published_at", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["created_at", Thu, 06 Aug 2015 21:41:04 UTC +00:00], ["feed_id", 1], ["guid", "http://example.com/test/1438897220"], ["json", "{\"title\":\"Lorem ipsum 2015-08-06T21:40:20+00:00\",\"link\":\"http://example.com/test/1438897220\",\"description\":\"Laboris officia cupidatat aliqua occaecat laborum officia eu mollit aliqua ea amet aliquip reprehenderit pariatur.\",\"pubDate\":\"2015-08-06T14:40:20-07:00\",\"guid\":\"http://example.com/test/1438897220\",\"dc_creator\":\"John Smith\"}"], ["link", "http://example.com/test/1438897220"], ["published_at", Thu, 06 Aug 2015 21:40:20 UTC +00:00], ["title", "Lorem ipsum 2015-08-06T21:40:20+00:00"], ["updated_at", Thu, 06 Aug 2015 21:41:04 UTC +00:00]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "entries" ("created_at", "feed_id", "guid", "json", "link", "published_at", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["created_at", Thu, 06 Aug 2015 21:41:04 UTC +00:00], ["feed_id", 1], ["guid", "http://example.com/test/1438897210"], ["json", "{\"title\":\"Lorem ipsum 2015-08-06T21:40:10+00:00\",\"link\":\"http://example.com/test/1438897210\",\"description\":\"Aute et eiusmod aliqua adipisicing sunt.\",\"pubDate\":\"2015-08-06T14:40:10-07:00\",\"guid\":\"http://example.com/test/1438897210\",\"dc_creator\":\"John Smith\"}"], ["link", "http://example.com/test/1438897210"], ["published_at", Thu, 06 Aug 2015 21:40:10 UTC +00:00], ["title", "Lorem ipsum 2015-08-06T21:40:10+00:00"], ["updated_at", Thu, 06 Aug 2015 21:41:04 UTC +00:00]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "entries" ("created_at", "feed_id", "guid", "json", "link", "published_at", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["created_at", Thu, 06 Aug 2015 21:41:04 UTC +00:00], ["feed_id", 1], ["guid", "http://example.com/test/1438897200"], ["json", "{\"title\":\"Lorem ipsum 2015-08-06T21:40:00+00:00\",\"link\":\"http://example.com/test/1438897200\",\"description\":\"In excepteur duis exercitation esse incididunt culpa ea est minim culpa.\",\"pubDate\":\"2015-08-06T14:40:00-07:00\",\"guid\":\"http://example.com/test/1438897200\",\"dc_creator\":\"John Smith\"}"], ["link", "http://example.com/test/1438897200"], ["published_at", Thu, 06 Aug 2015 21:40:00 UTC +00:00], ["title", "Lorem ipsum 2015-08-06T21:40:00+00:00"], ["updated_at", Thu, 06 Aug 2015 21:41:04 UTC +00:00]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "entries" ("created_at", "feed_id", "guid", "json", "link", "published_at", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["created_at", Thu, 06 Aug 2015 21:41:04 UTC +00:00], ["feed_id", 1], ["guid", "http://example.com/test/1438897190"], ["json", "{\"title\":\"Lorem ipsum 2015-08-06T21:39:50+00:00\",\"link\":\"http://example.com/test/1438897190\",\"description\":\"Amet quis duis nostrud amet.\",\"pubDate\":\"2015-08-06T14:39:50-07:00\",\"guid\":\"http://example.com/test/1438897190\",\"dc_creator\":\"John Smith\"}"], ["link", "http://example.com/test/1438897190"], ["published_at", Thu, 06 Aug 2015 21:39:50 UTC +00:00], ["title", "Lorem ipsum 2015-08-06T21:39:50+00:00"], ["updated_at", Thu, 06 Aug 2015 21:41:04 UTC +00:00]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "entries" ("created_at", "feed_id", "guid", "json", "link", "published_at", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["created_at", Thu, 06 Aug 2015 21:41:04 UTC +00:00], ["feed_id", 1], ["guid", "http://example.com/test/1438897180"], ["json", "{\"title\":\"Lorem ipsum 2015-08-06T21:39:40+00:00\",\"link\":\"http://example.com/test/1438897180\",\"description\":\"Laborum ad mollit voluptate cupidatat exercitation laborum Lorem quis deserunt consectetur.\",\"pubDate\":\"2015-08-06T14:39:40-07:00\",\"guid\":\"http://example.com/test/1438897180\",\"dc_creator\":\"John Smith\"}"], ["link", "http://example.com/test/1438897180"], ["published_at", Thu, 06 Aug 2015 21:39:40 UTC +00:00], ["title", "Lorem ipsum 2015-08-06T21:39:40+00:00"], ["updated_at", Thu, 06 Aug 2015 21:41:04 UTC +00:00]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "entries" ("created_at", "feed_id", "guid", "json", "link", "published_at", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["created_at", Thu, 06 Aug 2015 21:41:04 UTC +00:00], ["feed_id", 1], ["guid", "http://example.com/test/1438897170"], ["json", "{\"title\":\"Lorem ipsum 2015-08-06T21:39:30+00:00\",\"link\":\"http://example.com/test/1438897170\",\"description\":\"Consequat veniam veniam velit sit elit Lorem elit ex deserunt amet anim aliqua ea.\",\"pubDate\":\"2015-08-06T14:39:30-07:00\",\"guid\":\"http://example.com/test/1438897170\",\"dc_creator\":\"John Smith\"}"], ["link", "http://example.com/test/1438897170"], ["published_at", Thu, 06 Aug 2015 21:39:30 UTC +00:00], ["title", "Lorem ipsum 2015-08-06T21:39:30+00:00"], ["updated_at", Thu, 06 Aug 2015 21:41:04 UTC +00:00]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36mEntry Load (1.5ms)[0m  [1mSELECT "entries".* FROM "entries" WHERE "entries"."feed_id" = $1[0m  [["feed_id", 1]]
+  [1m[35mSQL (0.9ms)[0m  UPDATE "feeds" SET "updated_at" = '2015-08-06 21:41:04.451481' WHERE "feeds"."id" = 4
+  [1m[36m (0.9ms)[0m  [1mSELECT "entries"."guid" FROM "entries"[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (1.5ms)[0m  [1mINSERT INTO "entries" ("created_at", "feed_id", "guid", "json", "link", "published_at", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["created_at", Thu, 06 Aug 2015 21:41:04 UTC +00:00], ["feed_id", 4], ["guid", "http://qz.com/preview/474322"], ["json", "{\"title\":\"Quartz Daily Brief—Asia edition—US presidential debate, $5.5 billion Oreo bet, robot-human warfare\",\"link\":\"http://qz.com/474322/us-presidential-debate-5-5-billion-oreo-bet-robot-human-warfare/\",\"description\":\"What to watch for today Hershey assesses market conditions in China. Investors are braced for more disappointment as the the candy-maker reports quarterly earnings, but\\u0026#8230;\\u003Cimg alt=\\\"\\\" border=\\\"0\\\" src=\\\"http://pixel.wp.com/b.gif?host=qz.com\\u0026#038;blog=39587363\\u0026#038;post=474322\\u0026#038;subd=qzprod\\u0026#038;ref=\\u0026#038;feed=1\\\" width=\\\"1\\\" height=\\\"1\\\" /\\u003E\",\"content\":\"http://www.zacks.com/stock/news/184904/is-hershey-hsy-likely-to-disappoint-earnings-again-in-q2\",\"content_encoded\":\"\\u003Cp\\u003E\\u003Cstrong\\u003E\\u003Cem\\u003EWhat to watch for today\\u003C/em\\u003E\\u003C/strong\\u003E\\u003C/p\\u003E\\n\\u003Cp\\u003E\\u003Cstrong\\u003EHershey assesses market conditions in China.\\u003C/strong\\u003E Investors are braced for more disappointment as the the candy-maker \\u003Ca href=\\\"http://www.zacks.com/stock/news/184904/is-hershey-hsy-likely-to-disappoint-earnings-again-in-q2\\\"\\u003Ereports quarterly earnings\\u003C/a\\u003E, but they will also be looking for an update on its subsidiary Shanghai Golden Monkey Food. The company is planning to re-assess the value of Golden Monkey as it prepares to aquire the remaining 20% stake next month.\\u003C/p\\u003E\\n\\u003Cp\\u003E\\u003Cstrong\\u003EJohn Kerry visits Vietnam.\\u003C/strong\\u003E The US secretary of state wraps up his tour of southeast Asia with \\u003Ca href=\\\"http://www.militarytimes.com/story/military/2015/08/06/john-kerry-hanoi-mark-20th-anniversary-us-vietnam-ties/31214057/\\\" target=\\\"_blank\\\"\\u003Ea visit to Hanoi\\u003C/a\\u003E. Kerry, a veteran of America\\u0026#8217;s war in Vietnam, will commemorate the 20th anniversary of diplomatic relations between the two countries, though Vietnam\\u0026#8217;s human rights record are still a sore spot.\\u003C/p\\u003E\\n\\u003Cp\\u003E\\u003Cstrong\\u003ERepublican presidential contenders take the stage. \\u003C/strong\\u003EThe GOP will hold its first debate in Cleveland, Ohio, with a record-high ten candidates vying for attention. The race\\u0026#8217;s boisterous and media-savvy frontrunner is poised to make the Fox News-hosted event into \\u0026#8220;\\u003Ca href=\\\"http://www.npr.org/sections/itsallpolitics/2015/08/06/429409023/stage-is-set-for-the-first-republican-debates\\\" target=\\\"_blank\\\"\\u003EThe Donald Trump Show\\u003C/a\\u003E.\\u0026#8221;\\u003C/p\\u003E\\n\\u003Cp\\u003E\\u003Cstrong\\u003EThe US serves up jobs numbers. \\u003C/strong\\u003EWith the Federal Reserve expected to raise interest rates in September, \\u003Ca href=\\\"http://www.wsj.com/articles/jobs-data-could-hold-rates-fate-1438882754\\\"\\u003EJuly unemployment data\\u003C/a\\u003E are even more consequential than usual.\\u003C/p\\u003E\\n\\u003Cp\\u003E\\u003Cb\\u003E\\u003C/b\\u003E\\u003Cem\\u003E\\u003Cstrong\\u003EWhile you were sleeping\\u003C/strong\\u003E\\u003C/em\\u003E\\u003C/p\\u003E\\n\\u003Cp\\u003E\\u003Cstrong\\u003EA Russian attack on US military computers was revealed.\\u003C/strong\\u003E Hackers penetrated the Pentagon\\u0026#8217;s unclassified email system on July 25, \\u003Ca href=\\\"http://www.cnbc.com/2015/08/06/russia-hacks-pentagon-computers-nbc-citing-sources.html\\\" target=\\\"_blank\\\"\\u003Esources tell NBC News\\u003C/a\\u003E. The \\u0026#8220;sophisticated cyber intrusion\\u0026#8221; affected 4,000 civilian and military personnel of the US joint chiefs of staff, and forced the email system to shut down for two weeks.\\u003C/p\\u003E\\n\\u003Cp\\u003E\\u003Cstrong\\u003EAn activist investor bet on Oreos.\\u003C/strong\\u003E Bill Ackman has acquired a $5.5 billion stake in Mondelez, betting that the cookie-maker and food giant will become a major target in the rapidly consolidating food industry, \\u003Ca href=\\\"http://www.wsj.com/articles/activist-takes-5-5-billion-stake-in-snacks-giant-mondelez-1438825313\\\"\\u003Eaccording to the Wall Street Journal\\u003C/a\\u003E (paywall). Ackman, who is believed to own 7.5% of the company\\u0026#8217;s shares, is expected to call for \\u003Ca href=\\\"http://www.reuters.com/article/2015/08/06/mondelez-intl-stake-ackman-idUSL3N10H1A020150806\\\"\\u003Ecost cuts or a sale to a rival\\u003C/a\\u003E.\\u003C/p\\u003E\\n\\u003Cp\\u003E\\u003Cstrong\\u003EThe Bank of England signaled a 2016 rate increase.\\u003C/strong\\u003E The central bank said rising wages mean it will soon be time to wean Britain off its economic stimulus—but not just yet. \\u003Ca href=\\\"http://www.nytimes.com/reuters/2015/08/06/business/06reuters-britain-economy.html?ref=business\\\" target=\\\"_blank\\\"\\u003EInflation is expected to rise slowly\\u003C/a\\u003E, and economists are now predicting a rate hike in the first quarter of next year.\\u003C/p\\u003E\\n\\u003Cp\\u003E\\u003Cstrong\\u003EThree Coca-Cola bottlers merged in Europe.\\u003C/strong\\u003E Coca-Cola Enterprises, Coca-Cola Iberian Partners, and Germany\\u0026#8217;s Coca-Cola bottling company are getting together to form Coca-Cola European Partners (CCEP), which \\u003Ca href=\\\"http://www.nytimes.com/reuters/2015/08/06/business/06reuters-coca-cola-entr-europe.html?ref=business\\\" target=\\\"_blank\\\"\\u003Ewill be the world\\u0026#8217;s largest\\u003C/a\\u003E independent bottler of Coke drinks by revenue.\\u003C/p\\u003E\\n\\u003Cp\\u003E\\u003Cb\\u003EAn ISIL attack killed 15 people at a Saudi mosque. \\u003C/b\\u003EA suicide bomber entered a mosque in Abha, close to the Yemeni border, that was used by the Saudi military. Officials said several members of a Saudi special forces unit were among those killed, and many others were injured.\\u003C/p\\u003E\\n\\u003Cp\\u003E\\u003Cem\\u003E\\u003Cstrong\\u003EQuartz obsession interlude\\u003C/strong\\u003E\\u003C/em\\u003E\\u003C/p\\u003E\\n\\u003Cp\\u003E\\u003Cstrong\\u003EAdam Epstein remembers Jon Stewart\\u0026#8217;s serious moments on \\u003Cem\\u003EThe\\u003C/em\\u003E \\u003C/strong\\u003E\\u003Cem\\u003E\\u003Cstrong\\u003EDaily Show.\\u003C/strong\\u003E\\u003C/em\\u003E \\u0026#8220;It was not all jokes, all the time. After all, tragedy and comedy are two sides of the same coin, and Stewart knew exactly when—and how—to use each side. The fact that Stewart could navigate sensitive situations so delicately only made the laughs hit even harder when they came.\\u0026#8221; \\u003Ca href=\\\"http://qz.com/473000/jon-stewarts-seven-most-serious-moments-on-the-daily-show/\\\" target=\\\"_blank\\\"\\u003ERead more here.\\u003C/a\\u003E\\u003C/p\\u003E\\n\\u003Cp\\u003E\\u003Cem\\u003E\\u003Cstrong\\u003EMatters of debate\\u003C/strong\\u003E\\u003C/em\\u003E\\u003C/p\\u003E\\n\\u003Cp\\u003E\\u003Cstrong\\u003EThe US should not have bombed Hiroshima and Nagasaki 70 years ago\\u0026#8230;\\u003C/strong\\u003E A warning bomb over \\u003Ca href=\\\"http://qz.com/472146/its-clear-the-us-should-not-have-bombed-hiroshima-and-nagasaki/\\\" target=\\\"_blank\\\"\\u003ETokyo Bay would have sufficed\\u003C/a\\u003E.\\u003C/p\\u003E\\n\\u003Cp\\u003E\\u003Cstrong\\u003E\\u0026#8230;And it won\\u0026#8217;t be 70 years before the next nuclear blast.\\u003C/strong\\u003E Threats from proliferation are \\u003Ca href=\\\"http://www.ft.com/intl/cms/s/0/84614e2a-3c42-11e5-bbd1-b37bc06f590c.html?siteedition=intl#axzz3i3WHryCj\\\" target=\\\"_blank\\\"\\u003Eonly increasing\\u003C/a\\u003E.\\u003C/p\\u003E\\n\\u003Cp\\u003E\\u003Cstrong\\u003ESpending time online isn\\u0026#8217;t all bad for teenagers.\\u003C/strong\\u003E Their virtual connections \\u003Ca href=\\\"http://parenting.blogs.nytimes.com/2015/08/06/teenagers-leading-happy-connected-lives-online/?smid=tw-nytimes\\\" target=\\\"_blank\\\"\\u003Estrengthen friendships offline\\u003C/a\\u003E.\\u003C/p\\u003E\\n\\u003Cp\\u003E\\u003Cstrong\\u003EHoward Schultz is the liberal answer to Donald Trump.\\u003C/strong\\u003E The Starbucks CEO would stir things up, though he \\u003Ca href=\\\"http://www.theatlantic.com/politics/archive/2015/08/is-starbuckss-howard-schultz-the-liberal-answer-to-donald-trump/400589/\\\" target=\\\"_blank\\\"\\u003Edenies he is running\\u003C/a\\u003E.\\u003C/p\\u003E\\n\\u003Cp\\u003E\\u003Cstrong\\u003EChoosing running shoes need not be complicated.\\u003C/strong\\u003E All that matters \\u003Ca href=\\\"http://qz.com/472823/forget-the-fancy-technology-your-body-already-knows-how-to-pick-the-perfect-running-shoes/\\\" target=\\\"_blank\\\"\\u003Eis comfort\\u003C/a\\u003E.\\u003C/p\\u003E\\n\\u003Cp\\u003E\\u003Cem\\u003E\\u003Cstrong\\u003ESurprising discoveries\\u003C/strong\\u003E\\u003C/em\\u003E\\u003C/p\\u003E\\n\\u003Cp\\u003E\\u003Cstrong\\u003EDrug dealers will turn each other in if you ask nicely.\\u003C/strong\\u003E US police have found success \\u003Ca href=\\\"http://www.nytimes.com/2015/08/07/us/form-for-drug-dealers-to-snitch-on-competitors-results-in-an-arrest.html?module=WatchingPortal\\u0026amp;region=c-column-middle-span-region\\u0026amp;pgType=Homepage\\u0026amp;action=click\\u0026amp;mediaId=wide\\u0026amp;state=standard\\u0026amp;contentPlacement=1\\u0026amp;version=internal\\u0026amp;contentCollection=www.nytimes.com\\u0026amp;contentId=http%3A%2F%2Fwww.nytimes.com%2F2015%2F08%2F07%2Fus%2Fform-for-drug-dealers-to-snitch-on-competitors-results-in-an-arrest.html\\u0026amp;eventName=Watching-article-click\\\"\\u003Ewith a simple Facebook request\\u003C/a\\u003E.\\u003C/p\\u003E\\n\\u003Cp\\u003E\\u003Cstrong\\u003ESharks have a sixth sense.\\u003C/strong\\u003E They can detect \\u003Ca href=\\\"http://www.atlasobscura.com/articles/sharks-have-a-sixth-sense-and-it-is-terrifying\\\"\\u003Eelectrical charges\\u003C/a\\u003E better than the most sensitive measuring devices.\\u003C/p\\u003E\\n\\u003Cp\\u003E\\u003Cstrong\\u003ESelfie-taking is habit forming.\\u003C/strong\\u003E When surveyed, \\u003Ca href=\\\"http://qz.com/473702/one-in-ten-young-people-take-a-selfie-every-day/\\\" target=\\\"_blank\\\"\\u003E13% of 16-24 year-old Brits\\u003C/a\\u003E said they take at least one self-portrait a day.\\u003C/p\\u003E\\n\\u003Cp\\u003E\\u003Cstrong\\u003ERobot-human warfare has already begun.\\u003C/strong\\u003E The Canadian hitchhiking bot was \\u003Ca href=\\\"http://www.technologyreview.com/view/539986/robo-sabotage-is-surprisingly-common/\\\" target=\\\"_blank\\\"\\u003Enot the only victim\\u003C/a\\u003E.\\u003C/p\\u003E\\n\\u003Cp\\u003E\\u003Cstrong\\u003EValuable health data is being flushed down airplane toilets.\\u003C/strong\\u003E Intra-flight poop could help track \\u003Ca href=\\\"http://www.wired.com/2015/08/airplane-poop-help-track-global-disease-outbreaks/\\\" target=\\\"_blank\\\"\\u003Eglobal disease outbreaks\\u003C/a\\u003E.\\u003C/p\\u003E\\n\\u003Cp\\u003EOur best wishes for a productive day. Please send any news, comments, Facebook snitch requests, and selfie self-help advice to \\u003Ca href=\\\"mailto:hi@qz.com\\\" target=\\\"_blank\\\"\\u003Ehi@qz.com\\u003C/a\\u003E. You can follow us \\u003Ca href=\\\"http://us5.list-manage.com/track/click?u=610c6c88d981c23e5c6638b14\\u0026amp;id=97a087fb77\\u0026amp;e=b306a1f2ef\\\" target=\\\"_blank\\\"\\u003Eon Twitter\\u003C/a\\u003E for updates throughout the day.\\u003C/p\\u003E\\n\\u003Ch2\\u003ESign up for the Quartz Daily Brief \\u003Ca href=\\\"https://ssl.qz.com/brief\\\"\\u003Ehere\\u003C/a\\u003E, tailored for morning delivery in Asia, Europe \\u0026amp; Africa, and the Americas.\\u003C/h2\\u003E\\u003Cimg alt=\\\"\\\" border=\\\"0\\\" src=\\\"http://pixel.wp.com/b.gif?host=qz.com\\u0026#038;blog=39587363\\u0026#038;post=474322\\u0026#038;subd=qzprod\\u0026#038;ref=\\u0026#038;feed=1\\\" width=\\\"1\\\" height=\\\"1\\\" /\\u003E\",\"comments\":\"http://qz.com/474322/us-presidential-debate-5-5-billion-oreo-bet-robot-human-warfare/#comments\",\"pubDate\":\"2015-08-06T14:36:23-07:00\",\"category\":\"Uncategorized\",\"guid\":\"http://qz.com/preview/474322\",\"dc_creator\":\"Quartz Staff\"}"], ["link", "http://qz.com/474322/us-presidential-debate-5-5-billion-oreo-bet-robot-human-warfare/"], ["published_at", Thu, 06 Aug 2015 21:36:23 UTC +00:00], ["title", "Quartz Daily Brief—Asia edition—US presidential debate, $5.5 billion Oreo bet, robot-human warfare"], ["updated_at", Thu, 06 Aug 2015 21:41:04 UTC +00:00]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36mEntry Load (2.5ms)[0m  [1mSELECT "entries".* FROM "entries" WHERE "entries"."feed_id" = $1[0m  [["feed_id", 4]]
+  [1m[35mSQL (2.1ms)[0m  UPDATE "feeds" SET "updated_at" = '2015-08-06 21:41:04.827855' WHERE "feeds"."id" = 5
+  [1m[36m (0.7ms)[0m  [1mSELECT "entries"."guid" FROM "entries"[0m
+  [1m[35mEntry Load (0.6ms)[0m  SELECT "entries".* FROM "entries" WHERE "entries"."feed_id" = $1  [["feed_id", 5]]
+  [1m[36mSQL (0.8ms)[0m  [1mUPDATE "feeds" SET "updated_at" = '2015-08-06 21:41:05.212105' WHERE "feeds"."id" = 3[0m
+  [1m[35m (0.7ms)[0m  SELECT "entries"."guid" FROM "entries"
+  [1m[36mEntry Load (0.7ms)[0m  [1mSELECT "entries".* FROM "entries" WHERE "entries"."feed_id" = $1[0m  [["feed_id", 3]]
+  [1m[35mEntry Load (2.6ms)[0m  SELECT "entries".* FROM "entries" WHERE "entries"."feed_id" = $1  [["feed_id", 2]]
+Completed 200 OK in 1341ms (Views: 1312.3ms | ActiveRecord: 28.4ms)
+
+
+Started GET "/api/feeds/4" for 127.0.0.1 at 2015-08-06 14:41:06 -0700
+Processing by Api::FeedsController#show as JSON
+  Parameters: {"id"=>"4"}
+  [1m[36mFeed Load (0.8ms)[0m  [1mSELECT "feeds".* FROM "feeds" WHERE "feeds"."id" = $1 LIMIT 1[0m  [["id", "4"]]
+  [1m[35mEntry Load (15.8ms)[0m  SELECT "entries".* FROM "entries" WHERE "entries"."feed_id" = $1  [["feed_id", 4]]
+Completed 200 OK in 48ms (Views: 30.4ms | ActiveRecord: 16.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-06 14:41:40 -0700
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 8ms (Views: 7.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-06 14:41:40 -0700
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2015-08-06 14:41:40 -0700
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2015-08-06 14:41:40 -0700
+
+
+Started GET "/assets/news_reader.js?body=1" for 127.0.0.1 at 2015-08-06 14:41:40 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-06 14:41:40 -0700
+
+
+Started GET "/assets/feed_index.js?body=1" for 127.0.0.1 at 2015-08-06 14:41:40 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-06 14:41:40 -0700
+
+
+Started GET "/assets/feed_show.js?body=1" for 127.0.0.1 at 2015-08-06 14:41:40 -0700
+
+
+Started GET "/assets/models/entry.js?body=1" for 127.0.0.1 at 2015-08-06 14:41:40 -0700
+
+
+Started GET "/assets/models/feed.js?body=1" for 127.0.0.1 at 2015-08-06 14:41:40 -0700
+
+
+Started GET "/assets/collections/entries.js?body=1" for 127.0.0.1 at 2015-08-06 14:41:40 -0700
+
+
+Started GET "/assets/collections/feeds.js?body=1" for 127.0.0.1 at 2015-08-06 14:41:40 -0700
+
+
+Started GET "/assets/views/feed_show.js?body=1" for 127.0.0.1 at 2015-08-06 14:41:40 -0700
+
+
+Started GET "/assets/routers/router.js?body=1" for 127.0.0.1 at 2015-08-06 14:41:40 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-06 14:41:40 -0700
+
+
+Started GET "/assets/views/feed_index.js?body=1" for 127.0.0.1 at 2015-08-06 14:41:40 -0700
+
+
+Started GET "/api/feeds/4" for 127.0.0.1 at 2015-08-06 14:41:40 -0700
+Processing by Api::FeedsController#show as JSON
+  Parameters: {"id"=>"4"}
+  [1m[36mFeed Load (0.5ms)[0m  [1mSELECT "feeds".* FROM "feeds" WHERE "feeds"."id" = $1 LIMIT 1[0m  [["id", "4"]]
+  [1m[35mSQL (1.1ms)[0m  UPDATE "feeds" SET "updated_at" = '2015-08-06 21:41:40.398633' WHERE "feeds"."id" = 4
+  [1m[36m (0.7ms)[0m  [1mSELECT "entries"."guid" FROM "entries"[0m
+  [1m[35mEntry Load (2.3ms)[0m  SELECT "entries".* FROM "entries" WHERE "entries"."feed_id" = $1  [["feed_id", 4]]
+Completed 200 OK in 388ms (Views: 382.5ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-06 14:42:32 -0700
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 59ms (Views: 58.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-06 14:42:33 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-06 14:42:33 -0700
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2015-08-06 14:42:33 -0700
+
+
+Started GET "/assets/news_reader.js?body=1" for 127.0.0.1 at 2015-08-06 14:42:33 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-06 14:42:33 -0700
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2015-08-06 14:42:33 -0700
+
+
+Started GET "/assets/feed_index.js?body=1" for 127.0.0.1 at 2015-08-06 14:42:33 -0700
+
+
+Started GET "/assets/feed_show.js?body=1" for 127.0.0.1 at 2015-08-06 14:42:33 -0700
+
+
+Started GET "/assets/models/entry.js?body=1" for 127.0.0.1 at 2015-08-06 14:42:33 -0700
+
+
+Started GET "/assets/collections/entries.js?body=1" for 127.0.0.1 at 2015-08-06 14:42:33 -0700
+
+
+Started GET "/assets/models/feed.js?body=1" for 127.0.0.1 at 2015-08-06 14:42:33 -0700
+
+
+Started GET "/assets/collections/feeds.js?body=1" for 127.0.0.1 at 2015-08-06 14:42:33 -0700
+
+
+Started GET "/assets/views/feed_index.js?body=1" for 127.0.0.1 at 2015-08-06 14:42:33 -0700
+
+
+Started GET "/assets/views/feed_show.js?body=1" for 127.0.0.1 at 2015-08-06 14:42:33 -0700
+
+
+Started GET "/assets/routers/router.js?body=1" for 127.0.0.1 at 2015-08-06 14:42:33 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-06 14:42:33 -0700
+
+
+Started GET "/api/feeds/4" for 127.0.0.1 at 2015-08-06 14:42:33 -0700
+Processing by Api::FeedsController#show as JSON
+  Parameters: {"id"=>"4"}
+  [1m[36mFeed Load (0.4ms)[0m  [1mSELECT "feeds".* FROM "feeds" WHERE "feeds"."id" = $1 LIMIT 1[0m  [["id", "4"]]
+  [1m[35mSQL (0.8ms)[0m  UPDATE "feeds" SET "updated_at" = '2015-08-06 21:42:33.307158' WHERE "feeds"."id" = 4
+  [1m[36m (0.6ms)[0m  [1mSELECT "entries"."guid" FROM "entries"[0m
+  [1m[35mEntry Load (2.5ms)[0m  SELECT "entries".* FROM "entries" WHERE "entries"."feed_id" = $1  [["feed_id", 4]]
+Completed 200 OK in 421ms (Views: 416.1ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-06 14:42:53 -0700
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 85ms (Views: 85.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-06 14:42:53 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-06 14:42:53 -0700
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2015-08-06 14:42:53 -0700
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2015-08-06 14:42:53 -0700
+
+
+Started GET "/assets/news_reader.js?body=1" for 127.0.0.1 at 2015-08-06 14:42:53 -0700
+
+
+Started GET "/assets/feed_index.js?body=1" for 127.0.0.1 at 2015-08-06 14:42:53 -0700
+
+
+Started GET "/assets/feed_show.js?body=1" for 127.0.0.1 at 2015-08-06 14:42:53 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-06 14:42:53 -0700
+
+
+Started GET "/assets/models/entry.js?body=1" for 127.0.0.1 at 2015-08-06 14:42:53 -0700
+
+
+Started GET "/assets/models/feed.js?body=1" for 127.0.0.1 at 2015-08-06 14:42:53 -0700
+
+
+Started GET "/assets/collections/entries.js?body=1" for 127.0.0.1 at 2015-08-06 14:42:53 -0700
+
+
+Started GET "/assets/collections/feeds.js?body=1" for 127.0.0.1 at 2015-08-06 14:42:53 -0700
+
+
+Started GET "/assets/views/feed_index.js?body=1" for 127.0.0.1 at 2015-08-06 14:42:53 -0700
+
+
+Started GET "/assets/views/feed_show.js?body=1" for 127.0.0.1 at 2015-08-06 14:42:53 -0700
+
+
+Started GET "/assets/routers/router.js?body=1" for 127.0.0.1 at 2015-08-06 14:42:53 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-06 14:42:53 -0700
+
+
+Started GET "/api/feeds/4" for 127.0.0.1 at 2015-08-06 14:42:53 -0700
+Processing by Api::FeedsController#show as JSON
+  Parameters: {"id"=>"4"}
+  [1m[36mFeed Load (0.5ms)[0m  [1mSELECT "feeds".* FROM "feeds" WHERE "feeds"."id" = $1 LIMIT 1[0m  [["id", "4"]]
+  [1m[35mEntry Load (3.5ms)[0m  SELECT "entries".* FROM "entries" WHERE "entries"."feed_id" = $1  [["feed_id", 4]]
+Completed 200 OK in 60ms (Views: 54.6ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-06 14:42:55 -0700
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-06 14:42:55 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-06 14:42:55 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-06 14:42:55 -0700
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2015-08-06 14:42:56 -0700
+
+
+Started GET "/assets/news_reader.js?body=1" for 127.0.0.1 at 2015-08-06 14:42:56 -0700
+
+
+Started GET "/assets/feed_show.js?body=1" for 127.0.0.1 at 2015-08-06 14:42:56 -0700
+
+
+Started GET "/assets/feed_index.js?body=1" for 127.0.0.1 at 2015-08-06 14:42:56 -0700
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2015-08-06 14:42:56 -0700
+
+
+Started GET "/assets/models/entry.js?body=1" for 127.0.0.1 at 2015-08-06 14:42:56 -0700
+
+
+Started GET "/assets/models/feed.js?body=1" for 127.0.0.1 at 2015-08-06 14:42:56 -0700
+
+
+Started GET "/assets/collections/entries.js?body=1" for 127.0.0.1 at 2015-08-06 14:42:56 -0700
+
+
+Started GET "/assets/collections/feeds.js?body=1" for 127.0.0.1 at 2015-08-06 14:42:56 -0700
+
+
+Started GET "/assets/views/feed_index.js?body=1" for 127.0.0.1 at 2015-08-06 14:42:56 -0700
+
+
+Started GET "/assets/views/feed_show.js?body=1" for 127.0.0.1 at 2015-08-06 14:42:56 -0700
+
+
+Started GET "/assets/routers/router.js?body=1" for 127.0.0.1 at 2015-08-06 14:42:56 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-06 14:42:56 -0700
+
+
+Started GET "/api/feeds/4" for 127.0.0.1 at 2015-08-06 14:42:56 -0700
+Processing by Api::FeedsController#show as JSON
+  Parameters: {"id"=>"4"}
+  [1m[36mFeed Load (0.3ms)[0m  [1mSELECT "feeds".* FROM "feeds" WHERE "feeds"."id" = $1 LIMIT 1[0m  [["id", "4"]]
+  [1m[35mEntry Load (3.2ms)[0m  SELECT "entries".* FROM "entries" WHERE "entries"."feed_id" = $1  [["feed_id", 4]]
+Completed 200 OK in 49ms (Views: 44.6ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-06 14:43:15 -0700
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 66ms (Views: 65.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-06 14:43:16 -0700
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2015-08-06 14:43:16 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-06 14:43:16 -0700
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2015-08-06 14:43:16 -0700
+
+
+Started GET "/assets/news_reader.js?body=1" for 127.0.0.1 at 2015-08-06 14:43:16 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-06 14:43:16 -0700
+
+
+Started GET "/assets/feed_index.js?body=1" for 127.0.0.1 at 2015-08-06 14:43:16 -0700
+
+
+Started GET "/assets/feed_show.js?body=1" for 127.0.0.1 at 2015-08-06 14:43:16 -0700
+
+
+Started GET "/assets/models/entry.js?body=1" for 127.0.0.1 at 2015-08-06 14:43:16 -0700
+
+
+Started GET "/assets/models/feed.js?body=1" for 127.0.0.1 at 2015-08-06 14:43:16 -0700
+
+
+Started GET "/assets/collections/entries.js?body=1" for 127.0.0.1 at 2015-08-06 14:43:16 -0700
+
+
+Started GET "/assets/views/feed_index.js?body=1" for 127.0.0.1 at 2015-08-06 14:43:16 -0700
+
+
+Started GET "/assets/collections/feeds.js?body=1" for 127.0.0.1 at 2015-08-06 14:43:16 -0700
+
+
+Started GET "/assets/views/feed_show.js?body=1" for 127.0.0.1 at 2015-08-06 14:43:16 -0700
+
+
+Started GET "/assets/routers/router.js?body=1" for 127.0.0.1 at 2015-08-06 14:43:16 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-06 14:43:16 -0700
+
+
+Started GET "/api/feeds/4" for 127.0.0.1 at 2015-08-06 14:43:16 -0700
+Processing by Api::FeedsController#show as JSON
+  Parameters: {"id"=>"4"}
+  [1m[36mFeed Load (0.8ms)[0m  [1mSELECT "feeds".* FROM "feeds" WHERE "feeds"."id" = $1 LIMIT 1[0m  [["id", "4"]]
+  [1m[35mSQL (0.8ms)[0m  UPDATE "feeds" SET "updated_at" = '2015-08-06 21:43:16.406784' WHERE "feeds"."id" = 4
+  [1m[36m (0.8ms)[0m  [1mSELECT "entries"."guid" FROM "entries"[0m
+  [1m[35mEntry Load (2.2ms)[0m  SELECT "entries".* FROM "entries" WHERE "entries"."feed_id" = $1  [["feed_id", 4]]
+Completed 200 OK in 2432ms (Views: 2425.7ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-06 14:44:31 -0700
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 61ms (Views: 61.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-06 14:44:31 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-06 14:44:31 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-06 14:44:31 -0700
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2015-08-06 14:44:31 -0700
+
+
+Started GET "/assets/feed_index.js?body=1" for 127.0.0.1 at 2015-08-06 14:44:31 -0700
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2015-08-06 14:44:31 -0700
+
+
+Started GET "/assets/news_reader.js?body=1" for 127.0.0.1 at 2015-08-06 14:44:31 -0700
+
+
+Started GET "/assets/feed_show.js?body=1" for 127.0.0.1 at 2015-08-06 14:44:31 -0700
+
+
+Started GET "/assets/models/entry.js?body=1" for 127.0.0.1 at 2015-08-06 14:44:31 -0700
+
+
+Started GET "/assets/models/feed.js?body=1" for 127.0.0.1 at 2015-08-06 14:44:31 -0700
+
+
+Started GET "/assets/collections/feeds.js?body=1" for 127.0.0.1 at 2015-08-06 14:44:31 -0700
+
+
+Started GET "/assets/views/feed_index.js?body=1" for 127.0.0.1 at 2015-08-06 14:44:31 -0700
+
+
+Started GET "/assets/collections/entries.js?body=1" for 127.0.0.1 at 2015-08-06 14:44:31 -0700
+
+
+Started GET "/assets/views/feed_show.js?body=1" for 127.0.0.1 at 2015-08-06 14:44:31 -0700
+
+
+Started GET "/assets/routers/router.js?body=1" for 127.0.0.1 at 2015-08-06 14:44:31 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-06 14:44:31 -0700
+
+
+Started GET "/api/feeds/4" for 127.0.0.1 at 2015-08-06 14:44:31 -0700
+Processing by Api::FeedsController#show as JSON
+  Parameters: {"id"=>"4"}
+  [1m[36mFeed Load (0.4ms)[0m  [1mSELECT "feeds".* FROM "feeds" WHERE "feeds"."id" = $1 LIMIT 1[0m  [["id", "4"]]
+  [1m[35mSQL (0.8ms)[0m  UPDATE "feeds" SET "updated_at" = '2015-08-06 21:44:31.480342' WHERE "feeds"."id" = 4
+  [1m[36m (0.8ms)[0m  [1mSELECT "entries"."guid" FROM "entries"[0m
+  [1m[35mEntry Load (2.2ms)[0m  SELECT "entries".* FROM "entries" WHERE "entries"."feed_id" = $1  [["feed_id", 4]]
+Completed 200 OK in 468ms (Views: 462.3ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-06 14:46:09 -0700
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 77ms (Views: 77.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-06 14:46:09 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-06 14:46:09 -0700
+
+
+Started GET "/assets/news_reader.js?body=1" for 127.0.0.1 at 2015-08-06 14:46:09 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-06 14:46:09 -0700
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2015-08-06 14:46:09 -0700
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2015-08-06 14:46:09 -0700
+
+
+Started GET "/assets/feed_index.js?body=1" for 127.0.0.1 at 2015-08-06 14:46:09 -0700
+
+
+Started GET "/assets/feed_show.js?body=1" for 127.0.0.1 at 2015-08-06 14:46:09 -0700
+
+
+Started GET "/assets/models/feed.js?body=1" for 127.0.0.1 at 2015-08-06 14:46:09 -0700
+
+
+Started GET "/assets/models/entry.js?body=1" for 127.0.0.1 at 2015-08-06 14:46:09 -0700
+
+
+Started GET "/assets/collections/entries.js?body=1" for 127.0.0.1 at 2015-08-06 14:46:09 -0700
+
+
+Started GET "/assets/views/feed_index.js?body=1" for 127.0.0.1 at 2015-08-06 14:46:09 -0700
+
+
+Started GET "/assets/views/feed_show.js?body=1" for 127.0.0.1 at 2015-08-06 14:46:09 -0700
+
+
+Started GET "/assets/routers/router.js?body=1" for 127.0.0.1 at 2015-08-06 14:46:09 -0700
+
+
+Started GET "/assets/collections/feeds.js?body=1" for 127.0.0.1 at 2015-08-06 14:46:09 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-06 14:46:09 -0700
+
+
+Started GET "/api/feeds/4" for 127.0.0.1 at 2015-08-06 14:46:09 -0700
+Processing by Api::FeedsController#show as JSON
+  Parameters: {"id"=>"4"}
+  [1m[36mFeed Load (0.5ms)[0m  [1mSELECT "feeds".* FROM "feeds" WHERE "feeds"."id" = $1 LIMIT 1[0m  [["id", "4"]]
+  [1m[35mSQL (0.8ms)[0m  UPDATE "feeds" SET "updated_at" = '2015-08-06 21:46:09.880181' WHERE "feeds"."id" = 4
+  [1m[36m (0.8ms)[0m  [1mSELECT "entries"."guid" FROM "entries"[0m
+  [1m[35mEntry Load (2.6ms)[0m  SELECT "entries".* FROM "entries" WHERE "entries"."feed_id" = $1  [["feed_id", 4]]
+Completed 200 OK in 395ms (Views: 389.1ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/api/feeds" for 127.0.0.1 at 2015-08-06 14:47:35 -0700
+Processing by Api::FeedsController#index as JSON
+  [1m[36mFeed Load (0.6ms)[0m  [1mSELECT "feeds".* FROM "feeds"[0m
+  [1m[35mSQL (0.9ms)[0m  UPDATE "feeds" SET "updated_at" = '2015-08-06 21:47:35.913183' WHERE "feeds"."id" = 2
+  [1m[36m (0.7ms)[0m  [1mSELECT "entries"."guid" FROM "entries"[0m
+  [1m[35mEntry Load (1.4ms)[0m  SELECT "entries".* FROM "entries" WHERE "entries"."feed_id" = $1  [["feed_id", 2]]
+  [1m[36mSQL (0.8ms)[0m  [1mUPDATE "feeds" SET "updated_at" = '2015-08-06 21:47:36.297496' WHERE "feeds"."id" = 1[0m
+  [1m[35m (1.1ms)[0m  SELECT "entries"."guid" FROM "entries"
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "entries" ("created_at", "feed_id", "guid", "json", "link", "published_at", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["created_at", Thu, 06 Aug 2015 21:47:36 UTC +00:00], ["feed_id", 1], ["guid", "http://example.com/test/1438897650"], ["json", "{\"title\":\"Lorem ipsum 2015-08-06T21:47:30+00:00\",\"link\":\"http://example.com/test/1438897650\",\"description\":\"Et aute ex pariatur magna irure ex sit.\",\"pubDate\":\"2015-08-06T14:47:30-07:00\",\"guid\":\"http://example.com/test/1438897650\",\"dc_creator\":\"John Smith\"}"], ["link", "http://example.com/test/1438897650"], ["published_at", Thu, 06 Aug 2015 21:47:30 UTC +00:00], ["title", "Lorem ipsum 2015-08-06T21:47:30+00:00"], ["updated_at", Thu, 06 Aug 2015 21:47:36 UTC +00:00]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "entries" ("created_at", "feed_id", "guid", "json", "link", "published_at", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["created_at", Thu, 06 Aug 2015 21:47:36 UTC +00:00], ["feed_id", 1], ["guid", "http://example.com/test/1438897640"], ["json", "{\"title\":\"Lorem ipsum 2015-08-06T21:47:20+00:00\",\"link\":\"http://example.com/test/1438897640\",\"description\":\"Culpa eu non minim Lorem minim mollit cupidatat consectetur.\",\"pubDate\":\"2015-08-06T14:47:20-07:00\",\"guid\":\"http://example.com/test/1438897640\",\"dc_creator\":\"John Smith\"}"], ["link", "http://example.com/test/1438897640"], ["published_at", Thu, 06 Aug 2015 21:47:20 UTC +00:00], ["title", "Lorem ipsum 2015-08-06T21:47:20+00:00"], ["updated_at", Thu, 06 Aug 2015 21:47:36 UTC +00:00]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "entries" ("created_at", "feed_id", "guid", "json", "link", "published_at", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["created_at", Thu, 06 Aug 2015 21:47:36 UTC +00:00], ["feed_id", 1], ["guid", "http://example.com/test/1438897630"], ["json", "{\"title\":\"Lorem ipsum 2015-08-06T21:47:10+00:00\",\"link\":\"http://example.com/test/1438897630\",\"description\":\"Ad culpa ullamco voluptate cupidatat exercitation culpa.\",\"pubDate\":\"2015-08-06T14:47:10-07:00\",\"guid\":\"http://example.com/test/1438897630\",\"dc_creator\":\"John Smith\"}"], ["link", "http://example.com/test/1438897630"], ["published_at", Thu, 06 Aug 2015 21:47:10 UTC +00:00], ["title", "Lorem ipsum 2015-08-06T21:47:10+00:00"], ["updated_at", Thu, 06 Aug 2015 21:47:36 UTC +00:00]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "entries" ("created_at", "feed_id", "guid", "json", "link", "published_at", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["created_at", Thu, 06 Aug 2015 21:47:36 UTC +00:00], ["feed_id", 1], ["guid", "http://example.com/test/1438897620"], ["json", "{\"title\":\"Lorem ipsum 2015-08-06T21:47:00+00:00\",\"link\":\"http://example.com/test/1438897620\",\"description\":\"Dolor elit sunt do nisi ullamco excepteur incididunt officia aliquip aliqua ad ex adipisicing labore.\",\"pubDate\":\"2015-08-06T14:47:00-07:00\",\"guid\":\"http://example.com/test/1438897620\",\"dc_creator\":\"John Smith\"}"], ["link", "http://example.com/test/1438897620"], ["published_at", Thu, 06 Aug 2015 21:47:00 UTC +00:00], ["title", "Lorem ipsum 2015-08-06T21:47:00+00:00"], ["updated_at", Thu, 06 Aug 2015 21:47:36 UTC +00:00]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "entries" ("created_at", "feed_id", "guid", "json", "link", "published_at", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["created_at", Thu, 06 Aug 2015 21:47:36 UTC +00:00], ["feed_id", 1], ["guid", "http://example.com/test/1438897610"], ["json", "{\"title\":\"Lorem ipsum 2015-08-06T21:46:50+00:00\",\"link\":\"http://example.com/test/1438897610\",\"description\":\"Id veniam incididunt minim sunt ut magna duis duis non ullamco ipsum exercitation ea nulla.\",\"pubDate\":\"2015-08-06T14:46:50-07:00\",\"guid\":\"http://example.com/test/1438897610\",\"dc_creator\":\"John Smith\"}"], ["link", "http://example.com/test/1438897610"], ["published_at", Thu, 06 Aug 2015 21:46:50 UTC +00:00], ["title", "Lorem ipsum 2015-08-06T21:46:50+00:00"], ["updated_at", Thu, 06 Aug 2015 21:47:36 UTC +00:00]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "entries" ("created_at", "feed_id", "guid", "json", "link", "published_at", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["created_at", Thu, 06 Aug 2015 21:47:36 UTC +00:00], ["feed_id", 1], ["guid", "http://example.com/test/1438897600"], ["json", "{\"title\":\"Lorem ipsum 2015-08-06T21:46:40+00:00\",\"link\":\"http://example.com/test/1438897600\",\"description\":\"Excepteur ullamco id velit ea culpa ut id sint.\",\"pubDate\":\"2015-08-06T14:46:40-07:00\",\"guid\":\"http://example.com/test/1438897600\",\"dc_creator\":\"John Smith\"}"], ["link", "http://example.com/test/1438897600"], ["published_at", Thu, 06 Aug 2015 21:46:40 UTC +00:00], ["title", "Lorem ipsum 2015-08-06T21:46:40+00:00"], ["updated_at", Thu, 06 Aug 2015 21:47:36 UTC +00:00]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "entries" ("created_at", "feed_id", "guid", "json", "link", "published_at", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["created_at", Thu, 06 Aug 2015 21:47:36 UTC +00:00], ["feed_id", 1], ["guid", "http://example.com/test/1438897590"], ["json", "{\"title\":\"Lorem ipsum 2015-08-06T21:46:30+00:00\",\"link\":\"http://example.com/test/1438897590\",\"description\":\"Qui reprehenderit aliqua occaecat mollit anim ad adipisicing quis incididunt et.\",\"pubDate\":\"2015-08-06T14:46:30-07:00\",\"guid\":\"http://example.com/test/1438897590\",\"dc_creator\":\"John Smith\"}"], ["link", "http://example.com/test/1438897590"], ["published_at", Thu, 06 Aug 2015 21:46:30 UTC +00:00], ["title", "Lorem ipsum 2015-08-06T21:46:30+00:00"], ["updated_at", Thu, 06 Aug 2015 21:47:36 UTC +00:00]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "entries" ("created_at", "feed_id", "guid", "json", "link", "published_at", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["created_at", Thu, 06 Aug 2015 21:47:36 UTC +00:00], ["feed_id", 1], ["guid", "http://example.com/test/1438897580"], ["json", "{\"title\":\"Lorem ipsum 2015-08-06T21:46:20+00:00\",\"link\":\"http://example.com/test/1438897580\",\"description\":\"Eu cupidatat eiusmod ea ea aliquip ut est labore.\",\"pubDate\":\"2015-08-06T14:46:20-07:00\",\"guid\":\"http://example.com/test/1438897580\",\"dc_creator\":\"John Smith\"}"], ["link", "http://example.com/test/1438897580"], ["published_at", Thu, 06 Aug 2015 21:46:20 UTC +00:00], ["title", "Lorem ipsum 2015-08-06T21:46:20+00:00"], ["updated_at", Thu, 06 Aug 2015 21:47:36 UTC +00:00]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "entries" ("created_at", "feed_id", "guid", "json", "link", "published_at", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["created_at", Thu, 06 Aug 2015 21:47:36 UTC +00:00], ["feed_id", 1], ["guid", "http://example.com/test/1438897570"], ["json", "{\"title\":\"Lorem ipsum 2015-08-06T21:46:10+00:00\",\"link\":\"http://example.com/test/1438897570\",\"description\":\"Commodo esse nisi eiusmod ullamco.\",\"pubDate\":\"2015-08-06T14:46:10-07:00\",\"guid\":\"http://example.com/test/1438897570\",\"dc_creator\":\"John Smith\"}"], ["link", "http://example.com/test/1438897570"], ["published_at", Thu, 06 Aug 2015 21:46:10 UTC +00:00], ["title", "Lorem ipsum 2015-08-06T21:46:10+00:00"], ["updated_at", Thu, 06 Aug 2015 21:47:36 UTC +00:00]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "entries" ("created_at", "feed_id", "guid", "json", "link", "published_at", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["created_at", Thu, 06 Aug 2015 21:47:36 UTC +00:00], ["feed_id", 1], ["guid", "http://example.com/test/1438897560"], ["json", "{\"title\":\"Lorem ipsum 2015-08-06T21:46:00+00:00\",\"link\":\"http://example.com/test/1438897560\",\"description\":\"Sint Lorem quis exercitation labore.\",\"pubDate\":\"2015-08-06T14:46:00-07:00\",\"guid\":\"http://example.com/test/1438897560\",\"dc_creator\":\"John Smith\"}"], ["link", "http://example.com/test/1438897560"], ["published_at", Thu, 06 Aug 2015 21:46:00 UTC +00:00], ["title", "Lorem ipsum 2015-08-06T21:46:00+00:00"], ["updated_at", Thu, 06 Aug 2015 21:47:36 UTC +00:00]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36mEntry Load (1.6ms)[0m  [1mSELECT "entries".* FROM "entries" WHERE "entries"."feed_id" = $1[0m  [["feed_id", 1]]
+  [1m[35mSQL (1.0ms)[0m  UPDATE "feeds" SET "updated_at" = '2015-08-06 21:47:36.627217' WHERE "feeds"."id" = 5
+  [1m[36m (0.7ms)[0m  [1mSELECT "entries"."guid" FROM "entries"[0m
+  [1m[35mEntry Load (0.6ms)[0m  SELECT "entries".* FROM "entries" WHERE "entries"."feed_id" = $1  [["feed_id", 5]]
+  [1m[36mSQL (0.8ms)[0m  [1mUPDATE "feeds" SET "updated_at" = '2015-08-06 21:47:36.990614' WHERE "feeds"."id" = 3[0m
+  [1m[35m (0.8ms)[0m  SELECT "entries"."guid" FROM "entries"
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "entries" ("created_at", "feed_id", "guid", "json", "link", "published_at", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["created_at", Thu, 06 Aug 2015 21:47:37 UTC +00:00], ["feed_id", 3], ["guid", "http://www.npr.org/sections/thetwo-way/2015/08/06/430093359/melting-matterhorn-glacier-uncovers-remains-of-long-missing-climbers?utm_medium=RSS&amp;utm_campaign=news"], ["json", "{\"title\":\"Melting Matterhorn Glacier Uncovers Remains Of Long-Missing Climbers\",\"link\":\"http://www.npr.org/sections/thetwo-way/2015/08/06/430093359/melting-matterhorn-glacier-uncovers-remains-of-long-missing-climbers?utm_medium=RSS\\u0026amp;utm_campaign=news\",\"description\":\"The remains of two Japanese climbers reported missing on the iconic Alpine peak in 1970 have been positively identified by Swiss police.\",\"content_encoded\":\"\\u003Cp\\u003EThe remains of two Japanese climbers reported missing on the iconic Alpine peak in 1970 have been positively identified by Swiss police.\\u003C/p\\u003E\\u003Cp\\u003E\\u003Ca href=\\\"http://www.npr.org/templates/email/emailAFriend.php?storyId=430093359\\\"\\u003E\\u0026raquo; E-Mail This\\u003C/a\\u003E\\u003C/p\\u003E\",\"pubDate\":\"2015-08-06T14:36:00-07:00\",\"guid\":\"http://www.npr.org/sections/thetwo-way/2015/08/06/430093359/melting-matterhorn-glacier-uncovers-remains-of-long-missing-climbers?utm_medium=RSS\\u0026amp;utm_campaign=news\",\"dc_creator\":\"Scott Neuman\"}"], ["link", "http://www.npr.org/sections/thetwo-way/2015/08/06/430093359/melting-matterhorn-glacier-uncovers-remains-of-long-missing-climbers?utm_medium=RSS&amp;utm_campaign=news"], ["published_at", Thu, 06 Aug 2015 21:36:00 UTC +00:00], ["title", "Melting Matterhorn Glacier Uncovers Remains Of Long-Missing Climbers"], ["updated_at", Thu, 06 Aug 2015 21:47:37 UTC +00:00]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mEntry Load (0.9ms)[0m  SELECT "entries".* FROM "entries" WHERE "entries"."feed_id" = $1  [["feed_id", 3]]
+  [1m[36mSQL (0.7ms)[0m  [1mUPDATE "feeds" SET "updated_at" = '2015-08-06 21:47:37.175499' WHERE "feeds"."id" = 4[0m
+  [1m[35m (0.7ms)[0m  SELECT "entries"."guid" FROM "entries"
+  [1m[36mEntry Load (2.0ms)[0m  [1mSELECT "entries".* FROM "entries" WHERE "entries"."feed_id" = $1[0m  [["feed_id", 4]]
+Completed 200 OK in 1700ms (Views: 1673.5ms | ActiveRecord: 25.9ms)
+
+
+Started GET "/api/feeds" for 127.0.0.1 at 2015-08-06 14:47:53 -0700
+Processing by Api::FeedsController#index as JSON
+  [1m[35mFeed Load (0.4ms)[0m  SELECT "feeds".* FROM "feeds"
+  [1m[36mEntry Load (2.0ms)[0m  [1mSELECT "entries".* FROM "entries" WHERE "entries"."feed_id" = $1[0m  [["feed_id", 2]]
+  [1m[35mEntry Load (2.0ms)[0m  SELECT "entries".* FROM "entries" WHERE "entries"."feed_id" = $1  [["feed_id", 1]]
+  [1m[36mEntry Load (0.8ms)[0m  [1mSELECT "entries".* FROM "entries" WHERE "entries"."feed_id" = $1[0m  [["feed_id", 5]]
+  [1m[35mEntry Load (0.9ms)[0m  SELECT "entries".* FROM "entries" WHERE "entries"."feed_id" = $1  [["feed_id", 3]]
+  [1m[36mEntry Load (2.1ms)[0m  [1mSELECT "entries".* FROM "entries" WHERE "entries"."feed_id" = $1[0m  [["feed_id", 4]]
+Completed 200 OK in 154ms (Views: 145.4ms | ActiveRecord: 8.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-06 14:49:56 -0700
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 411ms (Views: 410.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-06 14:49:56 -0700
+
+
+Started GET "/assets/news_reader.js?body=1" for 127.0.0.1 at 2015-08-06 14:49:56 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-06 14:49:56 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-06 14:49:56 -0700
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2015-08-06 14:49:56 -0700
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2015-08-06 14:49:57 -0700
+
+
+Started GET "/assets/feed_index.js?body=1" for 127.0.0.1 at 2015-08-06 14:49:57 -0700
+
+
+Started GET "/assets/feed_show.js?body=1" for 127.0.0.1 at 2015-08-06 14:49:57 -0700
+
+
+Started GET "/assets/models/entry.js?body=1" for 127.0.0.1 at 2015-08-06 14:49:57 -0700
+
+
+Started GET "/assets/collections/entries.js?body=1" for 127.0.0.1 at 2015-08-06 14:49:57 -0700
+
+
+Started GET "/assets/collections/feeds.js?body=1" for 127.0.0.1 at 2015-08-06 14:49:57 -0700
+
+
+Started GET "/assets/views/feed_index.js?body=1" for 127.0.0.1 at 2015-08-06 14:49:57 -0700
+
+
+Started GET "/assets/views/feed_show.js?body=1" for 127.0.0.1 at 2015-08-06 14:49:57 -0700
+
+
+Started GET "/assets/models/feed.js?body=1" for 127.0.0.1 at 2015-08-06 14:49:57 -0700
+
+
+Started GET "/assets/routers/router.js?body=1" for 127.0.0.1 at 2015-08-06 14:49:57 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-06 14:49:57 -0700
+
+
+Started GET "/api/feeds/4" for 127.0.0.1 at 2015-08-06 14:49:57 -0700
+Processing by Api::FeedsController#show as JSON
+  Parameters: {"id"=>"4"}
+  [1m[35mFeed Load (0.4ms)[0m  SELECT "feeds".* FROM "feeds" WHERE "feeds"."id" = $1 LIMIT 1  [["id", "4"]]
+  [1m[36mSQL (19.9ms)[0m  [1mUPDATE "feeds" SET "updated_at" = '2015-08-06 21:49:57.155485' WHERE "feeds"."id" = 4[0m
+  [1m[35m (1.3ms)[0m  SELECT "entries"."guid" FROM "entries"
+  [1m[36mEntry Load (2.7ms)[0m  [1mSELECT "entries".* FROM "entries" WHERE "entries"."feed_id" = $1[0m  [["feed_id", 4]]
+Completed 200 OK in 467ms (Views: 441.5ms | ActiveRecord: 24.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-06 14:51:13 -0700
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 130ms (Views: 129.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-06 14:51:13 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-06 14:51:13 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-06 14:51:13 -0700
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2015-08-06 14:51:13 -0700
+
+
+Started GET "/assets/news_reader.js?body=1" for 127.0.0.1 at 2015-08-06 14:51:13 -0700
+
+
+Started GET "/assets/feed_index.js?body=1" for 127.0.0.1 at 2015-08-06 14:51:13 -0700
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2015-08-06 14:51:13 -0700
+
+
+Started GET "/assets/feed_show.js?body=1" for 127.0.0.1 at 2015-08-06 14:51:13 -0700
+
+
+Started GET "/assets/models/entry.js?body=1" for 127.0.0.1 at 2015-08-06 14:51:13 -0700
+
+
+Started GET "/assets/models/feed.js?body=1" for 127.0.0.1 at 2015-08-06 14:51:13 -0700
+
+
+Started GET "/assets/collections/entries.js?body=1" for 127.0.0.1 at 2015-08-06 14:51:13 -0700
+
+
+Started GET "/assets/views/feed_index.js?body=1" for 127.0.0.1 at 2015-08-06 14:51:13 -0700
+
+
+Started GET "/assets/collections/feeds.js?body=1" for 127.0.0.1 at 2015-08-06 14:51:13 -0700
+
+
+Started GET "/assets/routers/router.js?body=1" for 127.0.0.1 at 2015-08-06 14:51:13 -0700
+
+
+Started GET "/assets/views/feed_show.js?body=1" for 127.0.0.1 at 2015-08-06 14:51:13 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-06 14:51:13 -0700
+
+
+Started GET "/api/feeds/4" for 127.0.0.1 at 2015-08-06 14:51:13 -0700
+Processing by Api::FeedsController#show as JSON
+  Parameters: {"id"=>"4"}
+  [1m[35mFeed Load (0.4ms)[0m  SELECT "feeds".* FROM "feeds" WHERE "feeds"."id" = $1 LIMIT 1  [["id", "4"]]
+  [1m[36mSQL (0.8ms)[0m  [1mUPDATE "feeds" SET "updated_at" = '2015-08-06 21:51:13.963024' WHERE "feeds"."id" = 4[0m
+  [1m[35m (0.8ms)[0m  SELECT "entries"."guid" FROM "entries"
+  [1m[36mEntry Load (2.7ms)[0m  [1mSELECT "entries".* FROM "entries" WHERE "entries"."feed_id" = $1[0m  [["feed_id", 4]]
+Completed 200 OK in 353ms (Views: 347.0ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-06 14:51:47 -0700
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 469ms (Views: 468.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/feeds/4" for 127.0.0.1 at 2015-08-06 14:51:48 -0700
+Processing by Api::FeedsController#show as JSON
+  Parameters: {"id"=>"4"}
+  [1m[35mFeed Load (0.4ms)[0m  SELECT "feeds".* FROM "feeds" WHERE "feeds"."id" = $1 LIMIT 1  [["id", "4"]]
+  [1m[36mSQL (17.4ms)[0m  [1mUPDATE "feeds" SET "updated_at" = '2015-08-06 21:51:48.102065' WHERE "feeds"."id" = 4[0m
+  [1m[35m (8.8ms)[0m  SELECT "entries"."guid" FROM "entries"
+  [1m[36mEntry Load (2.2ms)[0m  [1mSELECT "entries".* FROM "entries" WHERE "entries"."feed_id" = $1[0m  [["feed_id", 4]]
+Completed 200 OK in 458ms (Views: 428.6ms | ActiveRecord: 28.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-06 14:51:48 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-06 14:51:48 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-06 14:51:48 -0700
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2015-08-06 14:51:48 -0700
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2015-08-06 14:51:48 -0700
+
+
+Started GET "/assets/news_reader.js?body=1" for 127.0.0.1 at 2015-08-06 14:51:48 -0700
+
+
+Started GET "/assets/feed_index.js?body=1" for 127.0.0.1 at 2015-08-06 14:51:48 -0700
+
+
+Started GET "/assets/models/entry.js?body=1" for 127.0.0.1 at 2015-08-06 14:51:48 -0700
+
+
+Started GET "/assets/models/feed.js?body=1" for 127.0.0.1 at 2015-08-06 14:51:48 -0700
+
+
+Started GET "/assets/feed_show.js?body=1" for 127.0.0.1 at 2015-08-06 14:51:48 -0700
+
+
+Started GET "/assets/collections/entries.js?body=1" for 127.0.0.1 at 2015-08-06 14:51:48 -0700
+
+
+Started GET "/assets/collections/feeds.js?body=1" for 127.0.0.1 at 2015-08-06 14:51:48 -0700
+
+
+Started GET "/assets/views/feed_index.js?body=1" for 127.0.0.1 at 2015-08-06 14:51:48 -0700
+
+
+Started GET "/assets/views/feed_show.js?body=1" for 127.0.0.1 at 2015-08-06 14:51:48 -0700
+
+
+Started GET "/assets/routers/router.js?body=1" for 127.0.0.1 at 2015-08-06 14:51:48 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-06 14:51:48 -0700
+
+
+Started GET "/api/feeds/4" for 127.0.0.1 at 2015-08-06 14:51:48 -0700
+Processing by Api::FeedsController#show as JSON
+  Parameters: {"id"=>"4"}
+  [1m[35mFeed Load (0.5ms)[0m  SELECT "feeds".* FROM "feeds" WHERE "feeds"."id" = $1 LIMIT 1  [["id", "4"]]
+  [1m[36mEntry Load (3.1ms)[0m  [1mSELECT "entries".* FROM "entries" WHERE "entries"."feed_id" = $1[0m  [["feed_id", 4]]
+Completed 200 OK in 48ms (Views: 42.8ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-06 14:54:35 -0700
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 149ms (Views: 148.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/feeds/4" for 127.0.0.1 at 2015-08-06 14:54:35 -0700
+Processing by Api::FeedsController#show as JSON
+  Parameters: {"id"=>"4"}
+  [1m[35mFeed Load (0.4ms)[0m  SELECT "feeds".* FROM "feeds" WHERE "feeds"."id" = $1 LIMIT 1  [["id", "4"]]
+  [1m[36mSQL (0.8ms)[0m  [1mUPDATE "feeds" SET "updated_at" = '2015-08-06 21:54:35.559191' WHERE "feeds"."id" = 4[0m
+  [1m[35m (6.5ms)[0m  SELECT "entries"."guid" FROM "entries"
+  [1m[36mEntry Load (2.1ms)[0m  [1mSELECT "entries".* FROM "entries" WHERE "entries"."feed_id" = $1[0m  [["feed_id", 4]]
+Completed 200 OK in 450ms (Views: 439.3ms | ActiveRecord: 9.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-06 14:54:36 -0700
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2015-08-06 14:54:36 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-06 14:54:36 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-06 14:54:36 -0700
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2015-08-06 14:54:36 -0700
+
+
+Started GET "/assets/news_reader.js?body=1" for 127.0.0.1 at 2015-08-06 14:54:36 -0700
+
+
+Started GET "/assets/feed_index.js?body=1" for 127.0.0.1 at 2015-08-06 14:54:36 -0700
+
+
+Started GET "/assets/feed_show.js?body=1" for 127.0.0.1 at 2015-08-06 14:54:36 -0700
+
+
+Started GET "/assets/models/feed.js?body=1" for 127.0.0.1 at 2015-08-06 14:54:36 -0700
+
+
+Started GET "/assets/collections/entries.js?body=1" for 127.0.0.1 at 2015-08-06 14:54:36 -0700
+
+
+Started GET "/assets/models/entry.js?body=1" for 127.0.0.1 at 2015-08-06 14:54:36 -0700
+
+
+Started GET "/assets/collections/feeds.js?body=1" for 127.0.0.1 at 2015-08-06 14:54:36 -0700
+
+
+Started GET "/assets/views/feed_index.js?body=1" for 127.0.0.1 at 2015-08-06 14:54:36 -0700
+
+
+Started GET "/assets/views/feed_show.js?body=1" for 127.0.0.1 at 2015-08-06 14:54:36 -0700
+
+
+Started GET "/assets/routers/router.js?body=1" for 127.0.0.1 at 2015-08-06 14:54:36 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-06 14:54:36 -0700
+
+
+Started GET "/api/feeds/4" for 127.0.0.1 at 2015-08-06 14:54:36 -0700
+Processing by Api::FeedsController#show as JSON
+  Parameters: {"id"=>"4"}
+  [1m[35mFeed Load (0.4ms)[0m  SELECT "feeds".* FROM "feeds" WHERE "feeds"."id" = $1 LIMIT 1  [["id", "4"]]
+  [1m[36mEntry Load (2.5ms)[0m  [1mSELECT "entries".* FROM "entries" WHERE "entries"."feed_id" = $1[0m  [["feed_id", 4]]
+Completed 200 OK in 38ms (Views: 34.5ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/api/feeds/4" for 127.0.0.1 at 2015-08-06 14:54:37 -0700
+Processing by Api::FeedsController#show as JSON
+  Parameters: {"id"=>"4"}
+  [1m[35mFeed Load (0.4ms)[0m  SELECT "feeds".* FROM "feeds" WHERE "feeds"."id" = $1 LIMIT 1  [["id", "4"]]
+  [1m[36mEntry Load (2.3ms)[0m  [1mSELECT "entries".* FROM "entries" WHERE "entries"."feed_id" = $1[0m  [["feed_id", 4]]
+Completed 200 OK in 26ms (Views: 21.7ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/api/feeds/4" for 127.0.0.1 at 2015-08-06 14:55:09 -0700
+Processing by Api::FeedsController#show as JSON
+  Parameters: {"id"=>"4"}
+  [1m[35mFeed Load (0.4ms)[0m  SELECT "feeds".* FROM "feeds" WHERE "feeds"."id" = $1 LIMIT 1  [["id", "4"]]
+  [1m[36mSQL (0.9ms)[0m  [1mUPDATE "feeds" SET "updated_at" = '2015-08-06 21:55:09.947208' WHERE "feeds"."id" = 4[0m
+  [1m[35m (0.9ms)[0m  SELECT "entries"."guid" FROM "entries"
+  [1m[36mEntry Load (2.3ms)[0m  [1mSELECT "entries".* FROM "entries" WHERE "entries"."feed_id" = $1[0m  [["feed_id", 4]]
+Completed 200 OK in 372ms (Views: 366.5ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-06 14:55:19 -0700
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 55ms (Views: 55.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2015-08-06 14:55:19 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-06 14:55:19 -0700
+
+
+Started GET "/assets/feed_index.js?body=1" for 127.0.0.1 at 2015-08-06 14:55:19 -0700
+
+
+Started GET "/assets/news_reader.js?body=1" for 127.0.0.1 at 2015-08-06 14:55:19 -0700
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2015-08-06 14:55:19 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-06 14:55:19 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-06 14:55:19 -0700
+
+
+Started GET "/assets/feed_show.js?body=1" for 127.0.0.1 at 2015-08-06 14:55:19 -0700
+
+
+Started GET "/assets/models/entry.js?body=1" for 127.0.0.1 at 2015-08-06 14:55:19 -0700
+
+
+Started GET "/assets/models/feed.js?body=1" for 127.0.0.1 at 2015-08-06 14:55:19 -0700
+
+
+Started GET "/assets/collections/entries.js?body=1" for 127.0.0.1 at 2015-08-06 14:55:19 -0700
+
+
+Started GET "/assets/collections/feeds.js?body=1" for 127.0.0.1 at 2015-08-06 14:55:19 -0700
+
+
+Started GET "/assets/views/feed_index.js?body=1" for 127.0.0.1 at 2015-08-06 14:55:19 -0700
+
+
+Started GET "/assets/views/feed_show.js?body=1" for 127.0.0.1 at 2015-08-06 14:55:19 -0700
+
+
+Started GET "/assets/routers/router.js?body=1" for 127.0.0.1 at 2015-08-06 14:55:19 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-06 14:55:19 -0700
+
+
+Started GET "/api/feeds/4" for 127.0.0.1 at 2015-08-06 14:55:19 -0700
+Processing by Api::FeedsController#show as JSON
+  Parameters: {"id"=>"4"}
+  [1m[35mFeed Load (0.4ms)[0m  SELECT "feeds".* FROM "feeds" WHERE "feeds"."id" = $1 LIMIT 1  [["id", "4"]]
+  [1m[36mEntry Load (3.2ms)[0m  [1mSELECT "entries".* FROM "entries" WHERE "entries"."feed_id" = $1[0m  [["feed_id", 4]]
+Completed 200 OK in 44ms (Views: 39.6ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/api/feeds/4" for 127.0.0.1 at 2015-08-06 14:56:10 -0700
+Processing by Api::FeedsController#show as JSON
+  Parameters: {"id"=>"4"}
+  [1m[35mFeed Load (0.4ms)[0m  SELECT "feeds".* FROM "feeds" WHERE "feeds"."id" = $1 LIMIT 1  [["id", "4"]]
+  [1m[36mSQL (1.0ms)[0m  [1mUPDATE "feeds" SET "updated_at" = '2015-08-06 21:56:10.232055' WHERE "feeds"."id" = 4[0m
+  [1m[35m (0.7ms)[0m  SELECT "entries"."guid" FROM "entries"
+  [1m[36mEntry Load (2.2ms)[0m  [1mSELECT "entries".* FROM "entries" WHERE "entries"."feed_id" = $1[0m  [["feed_id", 4]]
+Completed 200 OK in 356ms (Views: 350.7ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-06 14:56:10 -0700
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 478ms (Views: 478.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/feeds/4" for 127.0.0.1 at 2015-08-06 14:56:11 -0700
+Processing by Api::FeedsController#show as JSON
+  Parameters: {"id"=>"4"}
+  [1m[35mFeed Load (0.4ms)[0m  SELECT "feeds".* FROM "feeds" WHERE "feeds"."id" = $1 LIMIT 1  [["id", "4"]]
+  [1m[36mEntry Load (3.8ms)[0m  [1mSELECT "entries".* FROM "entries" WHERE "entries"."feed_id" = $1[0m  [["feed_id", 4]]
+Completed 200 OK in 60ms (Views: 53.8ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-06 14:56:11 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-06 14:56:11 -0700
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2015-08-06 14:56:11 -0700
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2015-08-06 14:56:11 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-06 14:56:11 -0700
+
+
+Started GET "/assets/feed_index.js?body=1" for 127.0.0.1 at 2015-08-06 14:56:11 -0700
+
+
+Started GET "/assets/news_reader.js?body=1" for 127.0.0.1 at 2015-08-06 14:56:11 -0700
+
+
+Started GET "/assets/feed_show.js?body=1" for 127.0.0.1 at 2015-08-06 14:56:11 -0700
+
+
+Started GET "/assets/models/entry.js?body=1" for 127.0.0.1 at 2015-08-06 14:56:11 -0700
+
+
+Started GET "/assets/collections/entries.js?body=1" for 127.0.0.1 at 2015-08-06 14:56:11 -0700
+
+
+Started GET "/assets/models/feed.js?body=1" for 127.0.0.1 at 2015-08-06 14:56:11 -0700
+
+
+Started GET "/assets/collections/feeds.js?body=1" for 127.0.0.1 at 2015-08-06 14:56:11 -0700
+
+
+Started GET "/assets/views/feed_index.js?body=1" for 127.0.0.1 at 2015-08-06 14:56:11 -0700
+
+
+Started GET "/assets/views/feed_show.js?body=1" for 127.0.0.1 at 2015-08-06 14:56:11 -0700
+
+
+Started GET "/assets/routers/router.js?body=1" for 127.0.0.1 at 2015-08-06 14:56:11 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-06 14:56:11 -0700
+
+
+Started GET "/api/feeds/4" for 127.0.0.1 at 2015-08-06 14:56:11 -0700
+Processing by Api::FeedsController#show as JSON
+  Parameters: {"id"=>"4"}
+  [1m[35mFeed Load (0.3ms)[0m  SELECT "feeds".* FROM "feeds" WHERE "feeds"."id" = $1 LIMIT 1  [["id", "4"]]
+  [1m[36mEntry Load (3.0ms)[0m  [1mSELECT "entries".* FROM "entries" WHERE "entries"."feed_id" = $1[0m  [["feed_id", 4]]
+Completed 200 OK in 38ms (Views: 34.0ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/api/feeds/4" for 127.0.0.1 at 2015-08-06 14:56:17 -0700
+Processing by Api::FeedsController#show as JSON
+  Parameters: {"id"=>"4"}
+  [1m[35mFeed Load (0.4ms)[0m  SELECT "feeds".* FROM "feeds" WHERE "feeds"."id" = $1 LIMIT 1  [["id", "4"]]
+  [1m[36mEntry Load (2.2ms)[0m  [1mSELECT "entries".* FROM "entries" WHERE "entries"."feed_id" = $1[0m  [["feed_id", 4]]
+Completed 200 OK in 29ms (Views: 25.2ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-06 14:56:37 -0700
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 190ms (Views: 189.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-06 14:56:37 -0700
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2015-08-06 14:56:37 -0700
+
+
+Started GET "/assets/news_reader.js?body=1" for 127.0.0.1 at 2015-08-06 14:56:37 -0700
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2015-08-06 14:56:37 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-06 14:56:37 -0700
+
+
+Started GET "/assets/models/entry.js?body=1" for 127.0.0.1 at 2015-08-06 14:56:37 -0700
+
+
+Started GET "/assets/models/feed.js?body=1" for 127.0.0.1 at 2015-08-06 14:56:37 -0700
+
+
+Started GET "/assets/feed_show.js?body=1" for 127.0.0.1 at 2015-08-06 14:56:37 -0700
+
+
+Started GET "/assets/feed_index.js?body=1" for 127.0.0.1 at 2015-08-06 14:56:37 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-06 14:56:37 -0700
+
+
+Started GET "/assets/views/feed_index.js?body=1" for 127.0.0.1 at 2015-08-06 14:56:37 -0700
+
+
+Started GET "/assets/collections/feeds.js?body=1" for 127.0.0.1 at 2015-08-06 14:56:37 -0700
+
+
+Started GET "/assets/collections/entries.js?body=1" for 127.0.0.1 at 2015-08-06 14:56:37 -0700
+
+
+Started GET "/assets/views/feed_show.js?body=1" for 127.0.0.1 at 2015-08-06 14:56:37 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-06 14:56:37 -0700
+
+
+Started GET "/assets/routers/router.js?body=1" for 127.0.0.1 at 2015-08-06 14:56:38 -0700
+
+
+Started GET "/api/feeds/4" for 127.0.0.1 at 2015-08-06 14:56:38 -0700
+Processing by Api::FeedsController#show as JSON
+  Parameters: {"id"=>"4"}
+  [1m[35mFeed Load (0.5ms)[0m  SELECT "feeds".* FROM "feeds" WHERE "feeds"."id" = $1 LIMIT 1  [["id", "4"]]
+  [1m[36mEntry Load (3.2ms)[0m  [1mSELECT "entries".* FROM "entries" WHERE "entries"."feed_id" = $1[0m  [["feed_id", 4]]
+Completed 200 OK in 32ms (Views: 27.3ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/api/feeds/4" for 127.0.0.1 at 2015-08-06 14:56:42 -0700
+Processing by Api::FeedsController#show as JSON
+  Parameters: {"id"=>"4"}
+  [1m[35mFeed Load (0.5ms)[0m  SELECT "feeds".* FROM "feeds" WHERE "feeds"."id" = $1 LIMIT 1  [["id", "4"]]
+  [1m[36mSQL (0.9ms)[0m  [1mUPDATE "feeds" SET "updated_at" = '2015-08-06 21:56:42.578002' WHERE "feeds"."id" = 4[0m
+  [1m[35m (0.7ms)[0m  SELECT "entries"."guid" FROM "entries"
+  [1m[36mEntry Load (2.3ms)[0m  [1mSELECT "entries".* FROM "entries" WHERE "entries"."feed_id" = $1[0m  [["feed_id", 4]]
+Completed 200 OK in 432ms (Views: 426.5ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/api/feeds/4" for 127.0.0.1 at 2015-08-06 14:56:47 -0700
+Processing by Api::FeedsController#show as JSON
+  Parameters: {"id"=>"4"}
+  [1m[35mFeed Load (0.4ms)[0m  SELECT "feeds".* FROM "feeds" WHERE "feeds"."id" = $1 LIMIT 1  [["id", "4"]]
+  [1m[36mEntry Load (2.5ms)[0m  [1mSELECT "entries".* FROM "entries" WHERE "entries"."feed_id" = $1[0m  [["feed_id", 4]]
+Completed 200 OK in 30ms (Views: 25.7ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-06 14:56:56 -0700
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 56ms (Views: 55.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-06 14:56:56 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-06 14:56:56 -0700
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2015-08-06 14:56:56 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-06 14:56:56 -0700
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2015-08-06 14:56:56 -0700
+
+
+Started GET "/assets/feed_index.js?body=1" for 127.0.0.1 at 2015-08-06 14:56:56 -0700
+
+
+Started GET "/assets/models/entry.js?body=1" for 127.0.0.1 at 2015-08-06 14:56:56 -0700
+
+
+Started GET "/assets/feed_show.js?body=1" for 127.0.0.1 at 2015-08-06 14:56:56 -0700
+
+
+Started GET "/assets/models/feed.js?body=1" for 127.0.0.1 at 2015-08-06 14:56:56 -0700
+
+
+Started GET "/assets/news_reader.js?body=1" for 127.0.0.1 at 2015-08-06 14:56:56 -0700
+
+
+Started GET "/assets/collections/entries.js?body=1" for 127.0.0.1 at 2015-08-06 14:56:56 -0700
+
+
+Started GET "/assets/views/feed_index.js?body=1" for 127.0.0.1 at 2015-08-06 14:56:56 -0700
+
+
+Started GET "/assets/views/feed_show.js?body=1" for 127.0.0.1 at 2015-08-06 14:56:56 -0700
+
+
+Started GET "/assets/collections/feeds.js?body=1" for 127.0.0.1 at 2015-08-06 14:56:56 -0700
+
+
+Started GET "/assets/routers/router.js?body=1" for 127.0.0.1 at 2015-08-06 14:56:56 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-06 14:56:56 -0700
+
+
+Started GET "/api/feeds/4" for 127.0.0.1 at 2015-08-06 14:56:57 -0700
+Processing by Api::FeedsController#show as JSON
+  Parameters: {"id"=>"4"}
+  [1m[35mFeed Load (0.5ms)[0m  SELECT "feeds".* FROM "feeds" WHERE "feeds"."id" = $1 LIMIT 1  [["id", "4"]]
+  [1m[36mEntry Load (5.2ms)[0m  [1mSELECT "entries".* FROM "entries" WHERE "entries"."feed_id" = $1[0m  [["feed_id", 4]]
+Completed 200 OK in 49ms (Views: 41.9ms | ActiveRecord: 5.7ms)

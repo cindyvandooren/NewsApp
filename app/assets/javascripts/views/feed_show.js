@@ -5,9 +5,17 @@ NewsReader.Views.FeedShow = Backbone.View.extend({
     this.listenTo(this.model, "sync", this.render);
   },
 
+  events: {
+    "click .refresh-show-feed" : "refreshFeed"
+  },
+
   render: function () {
     var content = this.template({feed: this.model});
     this.$el.html(content);
     return this;
+  },
+
+  refreshFeed: function () {
+    this.model.fetch();
   }
 });
