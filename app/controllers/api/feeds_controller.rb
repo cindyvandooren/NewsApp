@@ -1,6 +1,6 @@
 class Api::FeedsController < ApplicationController
   def index
-    render :json => Feed.all, include: :latest_entries
+    render :json => Feed.all
   end
 
   def show
@@ -13,6 +13,16 @@ class Api::FeedsController < ApplicationController
       render :json => feed
     else
       render :json => { error: "invalid url" }, status: :unprocessable_entity
+    end
+  end
+
+  def destroy
+    @feed = Feed.find(params[:id])
+
+    if @feed.destroy
+      render :json => Feed.all
+    else
+      render :json => @feed.errors.full_messages, status: :unprocessable_entity      
     end
   end
 

@@ -1,11 +1,5 @@
 <h2>Showpage for <%= feed.escape('title') %></h2>
 
-<% if (feed._entries) { %>
-  <ul>
-    <% feed._entries.each(function (entry) { %>
-      <li><%= entry.escape('title') %></li>
-    <% }); %>
-  </ul>
-<% }; %>
+<ul class="entries"></ul>
 
 <button class="refresh-show-feed">Refresh</button>

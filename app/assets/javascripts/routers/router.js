@@ -24,6 +24,13 @@ NewsReader.Routers.Router = Backbone.Router.extend({
     this._swapView(showView);
   },
 
+  feedNew: function () {
+    var collection = this.collection;
+    var model = new NewsReader.Models.Feed();
+    var newView = new NewsReader.Views.FeedNew({collection: collection, model: model});
+    this._swapView(newView);
+  },
+
   _swapView: function (view) {
     this._currentView && this._currentView.remove();
     this._currentView = view;
