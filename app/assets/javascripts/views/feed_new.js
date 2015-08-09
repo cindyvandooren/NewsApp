@@ -15,6 +15,7 @@ NewsReader.Views.FeedNew = Backbone.View.extend({
 
   addNewFeed: function (event) {
     event.preventDefault();
+    //serializeJSON is not the correct method! Figure out how gem works!
     var formdata = $(event.currentTarget).serializeJSON();
     this.model.save(formdata, {
       success: function () {
